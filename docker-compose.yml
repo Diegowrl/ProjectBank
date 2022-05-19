@@ -1,0 +1,13 @@
+version: "3.3"
+services:  
+  RS_RABBIT:
+    image: heidiks/rabbitmq-delayed-message-exchange:latest
+    ports:
+      - 15672:15672
+      - 5672:5672
+  RS_REDIS:
+    image: redis
+    ports:
+      - 6379:6379
+    environment:
+      - REDIS_PASSWORD=Passw0rd

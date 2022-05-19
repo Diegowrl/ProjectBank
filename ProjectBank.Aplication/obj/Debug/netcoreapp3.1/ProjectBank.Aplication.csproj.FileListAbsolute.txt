@@ -8,3 +8,13 @@ E:\projetos\prime\ProjectBank\ProjectBank\ProjectBank.Aplication\obj\Debug\netco
 E:\projetos\prime\ProjectBank\ProjectBank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.csproj.CoreCompileInputs.cache
 E:\projetos\prime\ProjectBank\ProjectBank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.dll
 E:\projetos\prime\ProjectBank\ProjectBank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.pdb
+E:\projetos\prime\bank\ProjectBank.Aplication\bin\Debug\netcoreapp3.1\ProjectBank.Aplication.deps.json
+E:\projetos\prime\bank\ProjectBank.Aplication\bin\Debug\netcoreapp3.1\ProjectBank.Aplication.dll
+E:\projetos\prime\bank\ProjectBank.Aplication\bin\Debug\netcoreapp3.1\ProjectBank.Aplication.pdb
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.csproj.AssemblyReference.cache
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.AssemblyInfoInputs.cache
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.AssemblyInfo.cs
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.csproj.CoreCompileInputs.cache
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.dll
+E:\projetos\prime\bank\ProjectBank.Aplication\obj\Debug\netcoreapp3.1\ProjectBank.Aplication.pdb
