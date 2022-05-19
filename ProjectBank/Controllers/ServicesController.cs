@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjectBank.Aplication.Interfaces;
+using ProjectBank.Aplication.Models.Bank;
 
 namespace ProjectBank.Api.Controllers
 {
@@ -6,32 +8,26 @@ namespace ProjectBank.Api.Controllers
     [Route("[controller]")]
     public class ServicesController : ControllerBase
     {
-        [HttpPost]
-        [Route("/Deposit")]
-        public string Deposit()
+        private readonly IOperationCommandHandle _operationCommandHandle;
+
+        public ServicesController(IOperationCommandHandle operationCommandHandle)
         {
-            return "500";
+            this._operationCommandHandle = operationCommandHandle;
         }
 
-        [HttpPost]
-        [Route("/Transfer")]
-        public bool Transfer()
+        [HttpGet]
+        [Route("/get")]
+        public bool Get()
         {
             return true;
         }
 
-        [HttpPost]
-        [Route("/Withdraw")]
-        public string Withdraw()
-        {
-            return "voce recebeu 100";
-        }
 
         [HttpPost]
-        [Route("/Extract")]
-        public string Extract()
+        [Route("/ticket")]
+        public void Post([FromBody] TicketModel ticket)
         {
-            return "200";
+            var result = _operationCommandHandle.send(ticket);
         }
     }
 }

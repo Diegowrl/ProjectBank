@@ -1,0 +1,10 @@
+E:\projetos\prime\bank\ProjectBank.Infrastructure\bin\Debug\netcoreapp3.1\ProjectBank.Infrastructure.deps.json
+E:\projetos\prime\bank\ProjectBank.Infrastructure\bin\Debug\netcoreapp3.1\ProjectBank.Infrastructure.dll
+E:\projetos\prime\bank\ProjectBank.Infrastructure\bin\Debug\netcoreapp3.1\ProjectBank.Infrastructure.pdb
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.csproj.AssemblyReference.cache
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.AssemblyInfoInputs.cache
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.AssemblyInfo.cs
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.csproj.CoreCompileInputs.cache
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.dll
+E:\projetos\prime\bank\ProjectBank.Infrastructure\obj\Debug\netcoreapp3.1\ProjectBank.Infrastructure.pdb
