@@ -1,4 +1,5 @@
 ﻿using ProjectBank.Aplication.Models.Bank;
+using ProjectBank.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,6 +8,6 @@ namespace ProjectBank.Aplication.Interfaces
 {
     public interface IOperationCommandHandle
     {
-        bool send(TicketModel ticket);
+        IEnumerable<Tribute> send(List<TicketModel> ticket);
     }
 }

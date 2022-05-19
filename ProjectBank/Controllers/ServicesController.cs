@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjectBank.Aplication.Interfaces;
 using ProjectBank.Aplication.Models.Bank;
+using ProjectBank.Domain.Entities;
+using System.Collections.Generic;
 
 namespace ProjectBank.Api.Controllers
 {
@@ -24,10 +26,10 @@ namespace ProjectBank.Api.Controllers
 
 
         [HttpPost]
-        [Route("/ticket")]
-        public void Post([FromBody] TicketModel ticket)
+        [Route("/tickets")]
+        public IEnumerable<Tribute> Post([FromBody] List<TicketModel> tickets)
         {
-            var result = _operationCommandHandle.send(ticket);
+                return _operationCommandHandle.send(tickets);
         }
     }
 }

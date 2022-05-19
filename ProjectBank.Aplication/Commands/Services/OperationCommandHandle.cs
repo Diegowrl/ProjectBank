@@ -4,6 +4,7 @@ using ProjectBank.Aplication.Models.Bank;
 using ProjectBank.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ProjectBank.Aplication.Commands.Services.Deposit
@@ -16,16 +17,20 @@ namespace ProjectBank.Aplication.Commands.Services.Deposit
         {
             this.mapper = mapper;
         }
-        public bool send(TicketModel ticketModel)
+        public IEnumerable<Tribute> send(List<TicketModel> ticketsModel)
         {
-            var ticket = mapper.Map<Ticket>(ticketModel);
+            var tickets = new List<Ticket>();
+
+            foreach (var ticketModel in ticketsModel)
+                tickets.Add(mapper.Map<Ticket>(ticketModel));
+
+            foreach (var ticket in tickets)
+            {
+                ticket.calculateCapitalGain();
+            }
 
 
-            if (ticket.quantity > 0)
-                return true;
-
-            return false;
-
+            return tickets.Select(x => x.tribute);
         }
     }
 }
