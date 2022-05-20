@@ -9,12 +9,25 @@ namespace ProjectBank.Domain.Entities
         public operationTypeModel operation { get; set; }
         public decimal unitCost { get; set; }
         public int quantity { get; set; }
-        public int capitalGain { get; set; }
         public Tribute tribute { get; set; }
 
-        public void calculateCapitalGain()
+        public void calculateTax()
         {
-            throw new NotImplementedException();
+            if (operation == operationTypeModel.buy)
+                tribute.tax = 0;
+            else if(validateTotalValor())
+            {
+                tribute.tax = 0;
+            }
+            else
+            {
+
+            }
+        }
+
+        public bool validateTotalValor()
+        {
+            return quantity * unitCost <= 20000 ? true : false;
         }
     }
 }

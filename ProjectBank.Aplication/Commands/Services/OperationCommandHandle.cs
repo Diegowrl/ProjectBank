@@ -24,11 +24,16 @@ namespace ProjectBank.Aplication.Commands.Services.Deposit
             foreach (var ticketModel in ticketsModel)
                 tickets.Add(mapper.Map<Ticket>(ticketModel));
 
+            var order = new Order(tickets);
+
             foreach (var ticket in tickets)
             {
-                ticket.calculateCapitalGain();
-            }
+                order.calculateQuantityActual(ticket);
 
+                order.calculateCapitalGain();
+
+                ticket.calculateTax();
+            }
 
             return tickets.Select(x => x.tribute);
         }
